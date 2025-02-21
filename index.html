@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我是教皇 - 瘟疫抉择</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div id="game">
+    <div id="scene-background"></div>
+    <div id="game-content">
+      <div id="character"></div>
+      <div id="dialogue"></div>
+      <div id="choices"></div>
+    </div>
+    <div id="decorations">
+      <img src="./assets/lamp_icon.png" alt="Lamp decoration" class="decoration">
+      <button id="end-button" style="display: none;">挑战结束！</button>
+    </div>
+  </div>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => console.log('Service Worker registered'))
+        .catch(error => console.error('Service Worker registration failed:', error));
+    }
+  </script>
+
+  <script src="game.js"></script>
+</body>
+</html>
