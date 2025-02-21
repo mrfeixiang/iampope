@@ -1,11 +1,22 @@
-## 📦 下载游戏 / Download the Game
+# 我是教皇 - 瘟疫抉择 (Papal Decisions: The Plague Era)
 
-你可以下载 ZIP 文件并在本地运行：
-[⬇️ 下载 ZIP 文件](https://github.com/mrfeixiang/iampope/raw/main/game-package.zip)
+**"我是教皇 - 瘟疫抉择"** 是一款文字互动游戏，玩家将扮演一位中世纪的教皇，在黑死病肆虐的时代做出决定，影响民众的生死存亡。你的选择将改变历史，你会如何应对瘟疫的挑战？
+
+## 🎮 在线试玩 / Play Online
+你可以直接在 GitHub Pages 试玩游戏：
+👉 [**点击这里开始游戏**](https://mrfeixiang.github.io/iampope/)
+
+---
+
+## 📦 下载游戏 / Download the Game
+你也可以下载 ZIP 文件，在本地运行：
+[⬇️ **下载 ZIP 文件**](https://github.com/mrfeixiang/iampope/raw/main/game-package.zip)
 
 ### 🎮 如何运行：
-1. 下载 `game-package.zip` 并解压
-2. 双击 `index.html` 在浏览器中打开
+1. 下载 `game-package.zip` 并解压。
+2. 双击 `index.html`，在浏览器中打开。
 
-# iampope
-游戏名称 / Game Title:  教皇抉择：瘟疫时代 Papal Decisions: The Plague Era： 在这款游戏中，你将扮演一位身处中世纪瘟疫蔓延时代的教皇。面对民众的困境、瘟疫的威胁以及道德与政治的抉择，你的每一个决策都将左右历史的进程。你会选择严格的隔离政策、虔诚的祈祷，还是勇敢地分发药品拯救生命？快来体验这段充满挑战与悬念的历史冒险之旅！  ---  English Introduction:   In this game, you assume the role of a Pope during a medieval era ravaged by plague. 
+---
+
+## 🛠️ 技术栈 / Tech Stack
+- **HTML5 + CSS3**：游戏界面与样式
