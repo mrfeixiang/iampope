@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我是教皇 - 瘟疫抉择</title>
+  
+  <!-- Add dynamic base tag for GitHub Pages -->
+  <script>
+    // Set the base URL dynamically based on environment
+    const baseUrl = location.hostname.includes('github.io') 
+      ? '/' + location.pathname.split('/')[1] + '/' 
+      : '/';
+    
+    document.write(`<base href="${baseUrl}">`);
+  </script>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div id="game">
+    <div id="scene-background"></div>
+    <div id="game-content">
+      <div id="character"></div>
+      <div id="dialogue"></div>
+      <div id="choices"></div>
+    </div>
+    <div id="decorations">
+      <!-- Fix image path with script to ensure correct path -->
+      <img id="lamp-icon" alt="Lamp decoration" class="decoration">
+      <script>
+        document.getElementById('lamp-icon').src = baseUrl + 'assets/lamp_icon.png';
+      </script>
+      <button id="end-button" style="display: none;">挑战结束！</button>
+    </div>
+  </div>
+
+  <!-- Service Worker Registration with path fix -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      const swPath = baseUrl === '/' ? '/sw.js' : baseUrl + '/sw.js';
+      navigator.serviceWorker.register(swPath)
+        .then(registration => console.log('Service Worker registered'))
+        .catch(error => console.error('Service Worker registration failed:', error));
+    }
+  </script>
+
+  <script src="game.js"></script>
+</body>
+</html>
